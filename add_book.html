@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+
+<body>
+
+    <a href="html_code.html" id="btn1">Home</a>
+    
+    <div class="head">
+        <h1 id="heading1">Add Books</h1>
+    </div>
+    
+
+    <div class="categories">
+
+        <h3 id="heading2">Categories</h3>
+
+            <input type="radio" id="radio1" name="radios" value="Science" onclick="call(this.id)">
+            <label for="radio1">Science</label>
+
+            <input type="radio" id="radio2" name="radios" value="Economics" onclick="call(this.id)">
+            <label for="radio2">Economics</label>
+
+            <input type="radio" id="radio3" name="radios" value="History" onclick="call(this.id)">
+            <label for="radio3">History</label>
+
+            <input type="radio" id="radio4" name="radios" value="Geography" onclick="call(this.id)">
+            <label for="radio4">Geography</label>
+
+            <input type="radio" id="radio5" name="radios" value="Others" onclick="call(this.id)" checked>
+            <label for="radio5">Others</label>
+    </div>
+
+    <div class="form-container">
+        <form action="">
+            <label for="title1">Title :</label>
+            <input type="text" id="title1" name="f1" placeholder="Enter Title">
+
+            <label for="title2">Accession No :</label>
+            <input type="text" id="title2" name="f2" placeholder="Enter Accession no">
+
+            <label for="title3">Author :</label>
+            <input type="text" id="title3" name="f3" placeholder="Enter author name">
+
+            <label for="title4">Publisher :</label>
+            <input type="text" id="title4" name="f4" placeholder="Enter publisher name">
+
+            <label for="title5">Edition :</label>
+            <input type="text" id="title5" name="f5" placeholder="Enter edition">
+            
+            <div class="end">
+                <label id="title6">Category :</label>
+                <label id="title7">Others</label>
+            </div>  
+            
+            <button type="button" id="btn">ADD</button>
+        </form>
+    </div>
+
+    <script>
+        function call(x) {
+            var ele = document.getElementById(x).value;
+            document.getElementById("title7").innerHTML = ele;
+        }
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet", href="style1.css">
+    <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        
+        function appear() {
+            var a = document.getElementById("b");
+            var b = document.getElementById("a");
+            b.style.display = "none" ;
+            a.style.display = "block";
+            
+        }
+
+        function appear2() {
+            var a = document.getElementById("b");
+            var b = document.getElementById("a");
+            a.style.display = "none";
+            b.style.display = "block";
+        }
+
+    </script>
+</head>
+<body>
+    
+    <div class="login-container" id="a">
+        <h2 id="heading">Welcome!</h2>
+        <h4 id="heading1"><u>Log In</u></h4>
+
+        <form action="" method="">
+            
+            <div class="username-field">
+                <i class="fa fa-user icon"></i>
+                <input class="field1" type="text" id="name" placeholder="Enter Email / Username" name="email" required> 
+            </div>
+
+            
+            <div class="password-field">
+                <i class="fa fa-lock icon"></i>
+                <input class="field1" type="password" placeholder="Enter Password" name="psw" required>
+            </div>
+            
+            <button type="submit" id = "signin-b" class="signin-b">Sign in</button>
+
+            <p id="question">Don't have an account?</p>
+            <button onclick="appear()" id = "signup-b" class="signup-b"><u>Sign up</u></button>
+        </form>
+        
+    </div>
+
+    <div class="signup-container" id="b">
+        <h2 class="heading2">Create your Account!</h2>
+        <form action="" method="post">
+            
+            <div class="username-field2">
+                <i class="fa fa-user icon"></i>
+                <input class="field1" type="text"  placeholder="Enter Name" name="name_" required> 
+            </div>
+
+            <div id="email-field2">
+                <i class="fa fa-envelope icon"></i>
+                <input class="field1" type="text" placeholder="Enter Email" name="email_" required> 
+            </div>
+            
+            <div class="password-field2">
+                <i class="fa fa-lock icon"></i>
+                <input class="field1" type="password" placeholder="Enter Password" name="password_" required>
+            </div>
+            
+            <button type="submit" name="submit" id = "signin-b" class="signin-b">Sign Up</button>
+
+            <p id="question2">Already have an account?</p>
+
+            <button onclick="appear2()" id = "signup-b" class="signup-b"><u>Sign in</u></button>
+        </form>
+    </div>
+</body>
+</html>

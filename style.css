@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-image: url(images/img1.png);
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+#quote {
+
+  font-size: 20pt;
+  color: white;
+  text-align: center;
+  font-family: Segoe UI ;
+  font-style: italic;
+  margin: 7vh 2vw 0 2vw;
+
+}
+
+
+.cards {
+
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+  margin-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+}
+
+.card1 {
+
+  position: relative;
+  background-image: url(images/science2.jpg);
+  background-position: center;
+  margin-bottom: 3vh;
+  background-size: cover;
+  height: 18em;
+  width: 26ch;
+  border-radius: 0.5em;
+  overflow: hidden;
+  transition: transform 500ms ease;
+  float: left;
+
+}
+
+.card1:hover {
+
+  transform: scale(1.05);
+
+}
+
+.bg-blur {
+
+  border-radius: 0.5em;
+  height: 18em;
+  width: 26ch;
+
+}
+
+#bg-blur1 {
+
+  background: hsl(0 0% 0% / 0.5);
+
+}
+
+.science {
+
+  position: absolute;
+  margin: 50% 0 0 24%;
+  color: white;
+  font-family: sans-serif;
+  
+}
+
+.fade {
+
+  position: absolute;
+  background: black;
+  height: 7em;
+  width: 26ch;
+  margin: 90% 0 0 0;
+  background: linear-gradient(
+      hsl(0 0% 0% / 0),
+      hsl(0 0% 0% / 0.9)
+  );
+  border-radius: 0 0 0.5rem 0.5rem;
+  transform: translateY(150%);
+  transition: transform 500ms ease;
+
+}
+
+.button {
+
+  position: relative;
+  margin: 15% 0 0 0;
+  color: white;
+  text-decoration: none;
+  border: solid white;
+  border-width: 2pt;
+  font-family: sans-serif;
+  font-size: 10pt;
+  font-weight: 600;
+  padding: 0.4em;
+  border-radius: 0.5em;
+  transition: 400ms;
+
+}
+
+.card1:hover .fade {
+
+  transform: translateY(0);
+
+}
+
+.button:hover {
+
+  background: white;
+  color: black;
+
+}
+
+.card2 {
+
+  position: relative;
+  margin-left: 3vw;
+  margin-bottom: 3vh;
+  background-image: url(images/economics.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 18em;
+  width: 26ch;
+  border-radius: 0.5em;
+  overflow: hidden;
+  transition: transform 500ms ease;
+  float: left;
+
+}
+
+.economics {
+
+  position: absolute;
+  margin: 53% 0 0 21%;
+  color: white;
+  font-family: sans-serif;
+
+}
+
+#bg-blur2 {
+
+  background: hsl(0 0% 0% / 0.05);
+
+}
+
+.card2:hover .fade {
+
+  transform: translateY(0);
+
+}
+
+.card2:hover {
+
+  transform: scale(1.05);
+
+}
+
+
+.card3 {
+
+  position: relative;
+  margin-left: 3vw;
+  margin-bottom: 3vh;
+  background-image: url(images/history.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 18em;
+  width: 26ch;
+  border-radius: 0.5em;
+  overflow: hidden;
+  transition: transform 500ms ease;
+  float: left;
+  
+
+}
+
+.history {
+
+  position: absolute;
+  margin: 56% 0 0 24%;
+  color: white;
+  font-family: sans-serif;
+
+}
+
+#bg-blur3 {
+
+  background: hsl(0 0% 0% / 0.4);
+
+}
+
+.card3:hover .fade {
+
+  transform: translateY(0);
+
+}
+
+.card3:hover {
+
+  transform: scale(1.05);
+
+}
+
+
+.card4 {
+
+  position: relative;
+  margin-left: 3vw;
+  margin-bottom: 3vh;
+  background-image: url(images/geography.jpg);
+  background-size: cover;
+  height: 18em;
+  width: 26ch;
+  border-radius: 0.5em;
+  overflow: hidden;
+  transition: transform 500ms ease;
+  float: left;
+
+}
+
+.geography {
+
+  position: absolute;
+  margin: 52% 0 0 21%;
+  color: white;
+  font-family: sans-serif;
+
+}
+
+#bg-blur4 {
+
+  background: hsl(0 0% 0% / 0.4);
+
+}
+
+.card4:hover .fade {
+
+  transform: translateY(0);
+
+}
+
+.card4:hover {
+
+  transform: scale(1.05);
+
+}
+
+
+.login {
+
+  display: block;
+  margin-top: 4rem;
+  text-align: center;
+
+}
+
+.all_books {
+
+  display: block;
+  margin-top: 2rem;
+  text-align: center;
+
+}
+
+.main-button {
+
+  color: white;
+  text-decoration: none;
+  border: solid white;
+  border-width: 2pt;
+  font-family: sans-serif;
+  font-size: 10pt;
+  font-weight: 700;
+  padding: 0.6em 1.1em;
+  border-radius: 1.5em;
+  transition: 400ms;
+
+}
+
+.main-button:hover {
+
+  background-color: white;
+  color: brown;
+
+}
+
+
